@@ -2,7 +2,7 @@ import './globals.css'
 
 export const metadata = {
   title: 'RPL SMKN 3 Jember - Rekayasa Perangkat Lunak',
-  description: 'Website Resmi Jurusan Rekayasa Perangkat Lunak SMKN 3 Jember - Home of Future Software Engineers',
+  description: 'Website Jurusan Rekayasa Perangkat Lunak SMKN 3 Jember - Home of Future Software Engineers',
     other: {
     "google-site-verification": "5aIAW2c6mcX-W8JPqSUQ_IGte85gz8KWwQ3HBVAabEE",
   }
