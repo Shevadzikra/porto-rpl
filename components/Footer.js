@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-1">
-            <h3 className="text-2xl font-bold mb-4">RPL SMK</h3>
+            <h3 className="text-xl font-bold mb-4">RPL SMKN 3 Jember</h3>
             <p className="text-gray-300">
               Mencipta Masa Depan, Satu Baris Kode pada Suatu Waktu.
             </p>
@@ -28,7 +28,7 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Kontak</h4>
             <ul className="space-y-2 text-gray-300">
-              <li>Jl. Pendidikan No. 123</li>
+              <li>Jl. Lorem Ipsum No. 123</li>
               <li>Kota Contoh</li>
               <li>Email: rpl@smk.example</li>
               <li>Telp: (021) 123-4567</li>
