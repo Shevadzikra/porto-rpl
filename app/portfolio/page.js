@@ -2,6 +2,7 @@ import Header from '../../components/Navbar';
 import Footer from '../../components/Footer';
 
 export default function Portfolio() {
+
   const projects = [
     {
       title: 'Sistem Informasi Perpustakaan',
@@ -53,14 +54,12 @@ export default function Portfolio() {
     },
   ];
 
-  // const categories = ['All', 'Web Application', 'Mobile App', 'Game', 'Website', 'Desktop App', 'IoT'];
-
   return (
     <div className="min-h-screen">
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-[#2563eb] text-white py-16">
+      <section className="bg-primary-600 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold text-center mb-4">Karya Siswa</h1>
           <p className="text-xl text-center max-w-3xl mx-auto">
@@ -72,22 +71,12 @@ export default function Portfolio() {
       {/* Portfolio Grid */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Category Filter */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {/* {categories.map((category) => (
-              <button
-                key={category}
-                className="px-6 py-2 rounded-full border border-gray-300 text-gray-700 hover:border-primary-600 hover:text-primary-600 transition-colors"
-              >
-                {category}
-              </button>
-            ))} */}
-          </div>
 
           {/* Projects Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover-lift group">
+              <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover-lift group animate-fade-up"
+              style={{ animationDelay: `${index * 300}ms` }}>
                 <div className="h-48 bg-gray-200 flex items-center justify-center relative overflow-hidden">
                   <span className="text-gray-400">[Gambar: {project.title}]</span>
                   <div className="absolute inset-0 bg-primary-600 bg-opacity-0 group-hover:bg-opacity-80 transition-all duration-300 flex items-center justify-center">
