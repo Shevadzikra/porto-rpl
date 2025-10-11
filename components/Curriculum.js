@@ -12,10 +12,6 @@ export default function Curriculum() {
                 "Dasar-dasar Web Development (HTML/CSS)",
                 "Logika Pemrograman",
                 "Algoritma dan Pemrograman Dasar",
-                // "Struktur Data Sederhana",
-                // "Pengenalan Bahasa Python & Java",
-                // "Sistem Komputer dan Jaringan Dasar",
-                // "Prinsip Desain Grafis untuk UI"
             ]
         },
 
@@ -23,17 +19,13 @@ export default function Curriculum() {
             title: "Kelas 11 - Development Phase",
             siswa: [
                 { 
-                    photo: "/images/stockImageStudent.png",
+                    photo: "/images/foto-jurusan/11th-grade-photo.png",
                 },
             ],
             materiRPL: [
                 "Basis Data dan SQL",
                 "Pemrograman Web (HTML5, CSS3, JavaScript, PHP)",
                 "UI/UX Design",
-                // "Framework Frontend (React.js)",
-                // "Pemrograman Berorientasi Objek (Java)",
-                // "RESTful API Development",
-                // "Version Control dengan Git",
             ]
         },
 
@@ -41,17 +33,13 @@ export default function Curriculum() {
         title: "Kelas 12 - Specialization & Real Projects",
         siswa: [
             { 
-                photo: "/images/stockImageStudent.png",
+                photo: "/images/foto-jurusan/12th-grade-photo.png",
             },
         ],
             materiRPL: [
                 "Advanced Database Management",
                 "Agile Development Methodology",
                 "Technopreneurship & Career Preparation(PKL)"
-                // "Pemrograman Mobile (Android/Kotlin)",
-                // "Full-Stack Development",
-                // "Software Engineering Principles",
-                // "Project Deployment & DevOps Dasar",
             ]
         }
     };
@@ -72,7 +60,7 @@ export default function Curriculum() {
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden mb-12 hover-lift">
             <div className="grid grid-cols-1 lg:grid-cols-3">
               {/* Foto Siswa */}
-              <div className="bg-gray-700 lg:col-span-1 bg-gradient-to-br from-primary-500 to-primary-600 p-8 flex flex-col justify-center">
+              <div className="bg-gray-700 lg:col-span-1 bg-gradient-to-br from-primary-500 to-primary-600 pt-8 pr-8 pl-8 flex flex-col justify-center">
                 <h3 className="text-2xl font-bold text-white mb-6 text-center">{curriculumData.kelas10.title}</h3>
                 <div className="space-y-6 ">
                   <img src={curriculumData.kelas10.siswa[0].photo} alt="Foto Siswa" className="w-full h-auto border-none object-cover" />
@@ -111,10 +99,10 @@ export default function Curriculum() {
               </div>
               
               {/* Foto Siswa */}
-              <div className="lg:col-span-1 bg-gradient-to-br from-blue-500 to-blue-600 p-8 flex flex-col justify-center order-1 lg:order-2">
+              <div className="lg:col-span-1 bg-gradient-to-br from-blue-500 to-blue-600 pt-8 pr-8 pl-8 flex flex-col justify-center order-1 lg:order-2">
                 <h3 className="text-2xl font-bold text-white mb-6 text-center">{curriculumData.kelas11.title}</h3>
                 <div className="space-y-6">
-                  <img src={curriculumData.kelas10.siswa[0].photo} alt="Foto Siswa" className="w-full h-auto border-none object-cover" />
+                  <img src={curriculumData.kelas11.siswa[0].photo} alt="Foto Siswa" className="w-full h-auto border-none object-cover" />
                 </div>
               </div>
             </div>
@@ -124,10 +112,10 @@ export default function Curriculum() {
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift">
             <div className="grid grid-cols-1 lg:grid-cols-3">
               {/* Foto Siswa */}
-              <div className="lg:col-span-1 bg-gradient-to-br from-purple-500 to-purple-600 p-8 flex flex-col justify-center">
+              <div className="lg:col-span-1 bg-gradient-to-br from-purple-500 to-purple-600 pt-8 pr-8 pl-8 flex flex-col justify-center">
                 <h3 className="text-2xl font-bold text-white mb-6 text-center">{curriculumData.kelas12.title}</h3>
                 <div className="space-y-6">
-                  <img src={curriculumData.kelas10.siswa[0].photo} alt="Foto Siswa" className="w-full h-auto border-none object-cover" />
+                  <img src={curriculumData.kelas12.siswa[0].photo} alt="Foto Siswa" className="w-full h-auto border-none object-cover" />
                 </div>
               </div>
               
