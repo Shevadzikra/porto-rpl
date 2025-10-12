@@ -8,12 +8,10 @@ export default function Header() {
 const navItems = [
   { name: 'Beranda', href: '/' },
   { name: 'Profil', href: '/about' },
-  { name: 'Kurikulum', href: '/curriculum' }, // ← Tambah ini
-  { name: 'Guru & Staf', href: '/teachers' }, // ← Tambah ini
+  { name: 'Kurikulum', href: '/#curriculum' },
+  { name: 'Guru & Staf', href: '/about#teachers' },
   { name: 'Karya Siswa', href: '/portfolio' },
-  { name: 'Karir', href: '/career' },
-  { name: 'Blog', href: '/blog' },
-  { name: 'Kontak', href: '/contact' },
+  { name: 'Karir', href: '/about#karir' },
 ];
 
   return (
