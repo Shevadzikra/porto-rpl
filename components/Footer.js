@@ -18,9 +18,9 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Tautan Cepat</h4>
             <ul className="space-y-2">
               <li><Link href="/about" className="text-gray-300 hover:text-white">Profil Jurusan</Link></li>
-              <li><Link href="/curriculum" className="text-gray-300 hover:text-white">Kurikulum</Link></li>
+              <li><Link href="/#curriculum" className="text-gray-300 hover:text-white">Kurikulum</Link></li>
               <li><Link href="/portfolio" className="text-gray-300 hover:text-white">Karya Siswa</Link></li>
-              <li><Link href="/career" className="text-gray-300 hover:text-white">Prospek Karir</Link></li>
+              <li><Link href="/about#karir" className="text-gray-300 hover:text-white">Prospek Karir</Link></li>
             </ul>
           </div>
 
@@ -28,10 +28,12 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Kontak</h4>
             <ul className="space-y-2 text-gray-300">
-              <li>Jl. Lorem Ipsum No. 123</li>
-              <li>Kota Contoh</li>
-              <li>Email: rpl@smk.example</li>
-              <li>Telp: (021) 123-4567</li>
+              <li>Jl.dr. Subandi No. 31,
+                  Kelurahan Jember Lor, Kec. Patrang,
+                  Kab. Jember, Jawa Timur 68118
+              </li>
+              <li>smktigajember@gmail.com</li>
+              <li>Telp: 0331-488069</li>
             </ul>
           </div>
 
@@ -39,14 +41,11 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Media Sosial</h4>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-white">
-                Instagram
+              <a href="https://www.instagram.com/rplskaga3?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="text-gray-300 hover:text-white">
+                Instagram Jurusan
               </a>
-              <a href="#" className="text-gray-300 hover:text-white">
-                YouTube
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white">
-                Facebook
+              <a href="https://www.instagram.com/smknegeri3jember?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="text-gray-300 hover:text-white">
+                Instagram Sekolah
               </a>
             </div>
           </div>
@@ -54,7 +53,15 @@ export default function Footer() {
 
         <div className="mt-8 pt-8 border-t border-gray-700 text-center text-gray-300">
           {/* <p>&copy; {new Date().getFullYear()} Jurusan RPL SMK. All rights reserved.</p> */}
-          <p>Made with ❤︎ by <span className="font-semibold text-white">Shevadzikra</span></p>
+          <p>Made with ❤︎ by  
+            <span className="font-semibold text-white">
+              <a className='underline ml-1.5 mr-1.5'
+              href='https://www.instagram.com/shevdza_/?utm_source=qr&r=nametag '>
+                Shevadzikra
+              </a>
+            </span>
+            on IG
+          </p>
         </div>
       </div>
     </footer>
