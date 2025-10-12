@@ -5,51 +5,57 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: 'Sistem Informasi Perpustakaan',
+      title: 'Epim 2024 Competition - Jember Cocoa Research Lab Website',
       category: 'Web Application',
-      description: 'Aplikasi web untuk manajemen perpustakaan sekolah dengan fitur peminjaman dan pengembalian buku',
-      technologies: ['PHP', 'MySQL', 'Bootstrap', 'JavaScript'],
-      image: '/images/library-system.jpg',
+      category2: 'Competition',
+      description: 'Aplikasi web untuk memperkenalkan wisata Observasi Laboratorium Kakao Jember',
+      technologies: ['Laravel', 'Bootstrap'],
+      image: '/images/porto-cover/cocoa-research-lab-website-photo.png',
       year: '2024'
     },
     {
-      title: 'Aplikasi Mobile E-Commerce',
-      category: 'Mobile App',
-      description: 'Aplikasi jual beli online dengan fitur chat real-time dan pembayaran digital',
-      technologies: ['React Native', 'Firebase', 'Node.js'],
-      image: '/images/ecommerce-app.jpg',
+      title: 'Epim 2024 Competition - Tanjung Papuma Beach Website',
+      category: 'Web Application',
+      category2: 'Competition',
+      description: 'Aplikasi web untuk memperkenalkan wisata Pantai Tanjung Papuma Jember',
+      technologies: ['PHP Native', 'Tailwind', 'JavaScript', 'GSAP'],
+      image: '/images/porto-cover/papuma-website-photo.png',
       year: '2024'
     },
     {
-      title: 'Game Edukasi Matematika',
-      category: 'Game',
-      description: 'Game edukasi untuk anak SD belajar matematika dengan cara yang menyenangkan',
-      technologies: ['Unity', 'C#', 'Blender'],
-      image: '/images/math-game.jpg',
-      year: '2023'
+      title: "Kharisma Trans Jember Website's Client",
+      category: 'Web Application',
+      category2: null,
+      description: 'Sebuah aplikasi web untuk klien penyedia jasa travel',
+      technologies: ['HTML', 'Tailwind', 'JavaScript'],
+      image: '/images/porto-cover/kharisma-trans-jember-website-photo.png',
+      year: '2024'
     },
     {
-      title: 'Website Company Profile',
+      title: 'Lorem Ipsum',
       category: 'Website',
-      description: 'Website modern untuk perusahaan dengan CMS custom dan desain responsive',
-      technologies: ['Next.js', 'Tailwind CSS', 'Strapi'],
-      image: '/images/company-profile.jpg',
+      category2: null,
+      description: 'Lorem Ipsum Dolor Sit Amet',
+      technologies: ['Lorem', 'Ipsum'],
+      image: '/images/porto-cover/',
       year: '2023'
     },
     {
-      title: 'Aplikasi POS Restoran',
-      category: 'Desktop App',
-      description: 'Sistem point of sale untuk restoran dengan fitur inventory dan laporan penjualan',
-      technologies: ['Java', 'JavaFX', 'SQLite'],
-      image: '/images/pos-app.jpg',
+      title: 'Lorem Ipsum',
+      category: 'Website',
+      category2: null,
+      description: 'Lorem Ipsum Dolor Sit Amet',
+      technologies: ['Lorem', 'Ipsum'],
+      image: '/images/porto-cover/',
       year: '2023'
     },
     {
-      title: 'IoT Smart Home Controller',
-      category: 'IoT',
-      description: 'Aplikasi kontrol perangkat smart home melalui smartphone dengan antarmuka yang intuitif',
-      technologies: ['Flutter', 'Arduino', 'Firebase'],
-      image: '/images/smart-home.jpg',
+      title: 'Lorem Ipsum',
+      category: 'Website',
+      category2: null,
+      description: 'Lorem Ipsum Dolor Sit Amet',
+      technologies: ['Lorem', 'Ipsum'],
+      image: '/images/porto-cover/',
       year: '2023'
     },
   ];
@@ -75,11 +81,12 @@ export default function Portfolio() {
           {/* Projects Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover-lift group animate-fade-up"
+              <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover-lift group"
               style={{ animationDelay: `${index * 300}ms` }}>
                 <div className="h-48 bg-gray-200 flex items-center justify-center relative overflow-hidden">
-                  <span className="text-gray-400">[Gambar: {project.title}]</span>
-                  <div className="absolute inset-0 bg-primary-600 bg-opacity-0 group-hover:bg-opacity-80 transition-all duration-300 flex items-center justify-center">
+                  <div 
+                    className="absolute inset-0 bg-fil bg-center bg-cover bg-opacity-0 group-hover:bg-opacity-80 transition-all duration-300 flex items-center justify-center"
+                    style={{ backgroundImage: `url(${project.image})`}}>
                   </div>
                 </div>
                 
@@ -97,6 +104,12 @@ export default function Portfolio() {
                     {project.category}
                   </span>
                   
+                  {project.category2 && (
+                    <span className="inline-block ml-1 px-3 py-1 bg-red-200 text-red-600 text-sm rounded-full mb-3">
+                      {project.category2}
+                    </span>
+                  )}
+
                   <p className="text-gray-600 mb-4 line-clamp-2">
                     {project.description}
                   </p>
