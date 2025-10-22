@@ -15,11 +15,11 @@ export default function Alumni() {
             testimonial: "lorem ipsum dolor sit amet, consectetur adipiscing elit."
         },
         {
-            name: 'Lorem Ipsum',
-            image: null,
-            university: 'Stimata - D3 Teknik Informatika',
-            graduationYear: '2023/2024',
-            testimonial: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            name: 'Mas Aril',
+            image: 'images/alumni-photos/aril-photo.jpg',
+            university: 'Politeknik Elektronika Negeri Surabaya (PENS)',
+            graduationYear: '2024',
+            testimonial: "RPL adalah tempat saya bertumbuh. Selain menguasai skill coding, saya juga belajar banyak tentang komunikasi, kegigihan, dan berpikir kritis. Ilmu ini terbukti membawa saya menjuarai beberapa kompetisi tingkat regional bahkan nasional. Bagi saya, RPL adalah persiapan karir terbaik, yang sukses mengantarkan saya lolos ke perguruan tinggi negeri impian."
         }
     ];
 
