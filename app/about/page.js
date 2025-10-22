@@ -45,7 +45,7 @@ export default function About() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Apa yang Dipelajari?</h3>
               <p className="text-gray-600">
-                Pemrograman web & mobile, basis data, UI/UX design, software engineering, dan pengembangan solusi digital untuk berbagai industri.
+                Pemrograman web, basis data, UI/UX design, dan pengembangan solusi digital untuk berbagai industri.
               </p>
             </div>
 

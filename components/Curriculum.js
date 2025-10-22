@@ -25,8 +25,9 @@ export default function Curriculum() {
             ],
             materiRPL: [
                 "Basis Data dan SQL",
-                "Pemrograman Web (HTML5, CSS3, JavaScript, PHP)",
+                "Pemrograman Web (HTML, CSS, JavaScript, PHP)",
                 "UI/UX Design",
+                'Kolaborasi Tim dalam Pengembangan Aplikasi'
             ]
         },
 
@@ -38,9 +39,9 @@ export default function Curriculum() {
             },
         ],
             materiRPL: [
-                "Advanced Database Management",
-                "Agile Development Methodology",
-                "Technopreneurship & Career Preparation(PKL)"
+                "Pengelolaan Basis Data Lanjutan",
+                "Penerapan Proyek pada Dunia Nyata",
+                "Pembekalan Praktek Kerja lapangan(PKL)"
             ]
         }
     };
