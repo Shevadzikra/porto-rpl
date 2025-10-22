@@ -32,31 +32,31 @@ export default function Portfolio() {
       year: '2024'
     },
     {
-      title: 'Lorem Ipsum',
-      category: 'Website',
+      title: 'Cashier Web Application',
+      category: 'Web Application',
       category2: null,
-      description: 'Lorem Ipsum Dolor Sit Amet',
-      technologies: ['Lorem', 'Ipsum'],
-      image: '/images/porto-cover/',
-      year: '2023'
+      description: 'Membuat aplikasi berbasis website berupa kasir',
+      technologies: ['PHP', 'JavaScript', 'Bootstrap'],
+      image: '/images/porto-cover/cashier-app-photo.png',
+      year: '2024'
     },
     {
-      title: 'Lorem Ipsum',
-      category: 'Website',
+      title: 'E-Ticketing Football',
+      category: 'Web Application',
       category2: null,
-      description: 'Lorem Ipsum Dolor Sit Amet',
-      technologies: ['Lorem', 'Ipsum'],
-      image: '/images/porto-cover/',
-      year: '2023'
+      description: 'Pembelian tiket sepakbola berbasis website',
+      technologies: ['PHP', 'Bootstrap', 'JavaScript'],
+      image: '/images/porto-cover/ticketing-efootball-photo.png',
+      year: '2024'
     },
     {
-      title: 'Lorem Ipsum',
-      category: 'Website',
+      title: 'Online Library Book Borrowing',
+      category: 'Web Application',
       category2: null,
-      description: 'Lorem Ipsum Dolor Sit Amet',
-      technologies: ['Lorem', 'Ipsum'],
-      image: '/images/porto-cover/',
-      year: '2023'
+      description: 'Aplikasi peminjaman buku perpustakaan berbasis website',
+      technologies: ['PHP', 'JavaScript', 'Tailwind'],
+      image: '/images/porto-cover/perpus-skaga-website-photo.png',
+      year: '2024'
     },
   ];
 
