@@ -1,11 +1,12 @@
+import Image from "next/image";
+
 export default function Curriculum() {
-    // Data Kurikulum per Kelas (Hanya Materi RPL)
     const curriculumData = {
         kelas10: {
             title: "Kelas 10 - Foundation Year",
             siswa: [
                 { 
-                    photo: "/images/foto-jurusan/10th-grade-photo.png",
+                    photo: "foto-jurusan/10th-grade-photo.png",
                 },
             ],
             materiRPL: [
@@ -19,7 +20,7 @@ export default function Curriculum() {
             title: "Kelas 11 - Development Phase",
             siswa: [
                 { 
-                    photo: "/images/foto-jurusan/11th-grade-photo.png",
+                    photo: "foto-jurusan/11th-grade-photo.png",
                 },
             ],
             materiRPL: [
@@ -33,7 +34,7 @@ export default function Curriculum() {
         title: "Kelas 12 - Specialization & Real Projects",
         siswa: [
             { 
-                photo: "/images/foto-jurusan/12th-grade-photo.png",
+                photo: "foto-jurusan/12th-grade-photo.png",
             },
         ],
             materiRPL: [
@@ -63,7 +64,7 @@ export default function Curriculum() {
               <div className="lg:col-span-1 bg-gradient-to-br bg-indigo-400 pt-8 pr-8 pl-8 flex flex-col justify-center">
                 <h3 className="text-2xl font-bold text-white mb-6 text-center">{curriculumData.kelas10.title}</h3>
                 <div className="space-y-6 ">
-                  <img src={curriculumData.kelas10.siswa[0].photo} alt="Foto Siswa" className="w-full h-auto border-none object-cover" />
+                  <Image src={`/images/${curriculumData.kelas10.siswa[0].photo}`} alt="Foto Siswa" width={350} height={350} className="border-none object-cover" />
                 </div>
               </div>
               
@@ -102,7 +103,7 @@ export default function Curriculum() {
               <div className="lg:col-span-1 bg-gradient-to-br from-blue-500 to-blue-600 pt-8 pr-8 pl-8 flex flex-col justify-center order-1 lg:order-2">
                 <h3 className="text-2xl font-bold text-white mb-6 text-center">{curriculumData.kelas11.title}</h3>
                 <div className="space-y-6">
-                  <img src={curriculumData.kelas11.siswa[0].photo} alt="Foto Siswa" className="w-full h-auto border-none object-cover" />
+                  <Image src={`/images/${curriculumData.kelas11.siswa[0].photo}`} alt="Foto Siswa" width={350} height={350} className="border-none object-cover" />
                 </div>
               </div>
             </div>
@@ -115,7 +116,7 @@ export default function Curriculum() {
               <div className="lg:col-span-1 bg-gradient-to-br from-purple-500 to-purple-600 pt-8 pr-8 pl-8 flex flex-col justify-center">
                 <h3 className="text-2xl font-bold text-white mb-6 text-center">{curriculumData.kelas12.title}</h3>
                 <div className="space-y-6">
-                  <img src={curriculumData.kelas12.siswa[0].photo} alt="Foto Siswa" className="w-full h-auto border-none object-cover" />
+                  <Image src={`/images/${curriculumData.kelas12.siswa[0].photo}`} alt="Foto Siswa" width={350} height={350} className="border-none object-cover" />
                 </div>
               </div>
               

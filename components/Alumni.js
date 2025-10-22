@@ -1,8 +1,10 @@
+import Image from "next/image";
+
 export default function Alumni() {
     const alumni = [
         {
             name: 'M Dien Vito Alivio Hidayat',
-            image: 'images/alumni-photos/m-dien-vito-alivio-hidayat-photo.jpg',
+            image: 'alumni-photos/m-dien-vito-alivio-hidayat-photo.jpg',
             university: 'Politeknik Negeri Jember - D4 Teknik Informatika',
             graduationYear: '2023',
             testimonial: "Selama di jurusan RPL, aku nggak cuma belajar ngoding, tapi juga diajarin cara berpikir logis dan kreatif untuk menyelesaikan masalah. Di era teknologi sekarang apalagi dengan berkembangnya AI kemampuan dari RPL jadi makin relevan. Kita bisa ikut berperan dalam bikin aplikasi pintar, sistem otomatisasi, sampai integrasi AI ke produk digital. Prospek kerjanya luas banget, dari developer, data analyst, UI/UX, sampai AI engineer pun bisa ditempuh kalau kita terus belajar. Buat adik-adik yang suka teknologi dan tantangan, RPL ini benar-benar jadi bekal masa depan."
@@ -16,7 +18,7 @@ export default function Alumni() {
         },
         {
             name: 'Mas Aril',
-            image: 'images/alumni-photos/aril-photo.jpg',
+            image: 'alumni-photos/aril-photo.jpg',
             university: 'Politeknik Elektronika Negeri Surabaya (PENS)',
             graduationYear: '2024',
             testimonial: "RPL adalah tempat saya bertumbuh. Selain menguasai skill coding, saya juga belajar banyak tentang komunikasi, kegigihan, dan berpikir kritis. Ilmu ini terbukti membawa saya menjuarai beberapa kompetisi tingkat regional bahkan nasional. Bagi saya, RPL adalah persiapan karir terbaik, yang sukses mengantarkan saya lolos ke perguruan tinggi negeri impian."
@@ -32,7 +34,7 @@ export default function Alumni() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {alumni.map((alumnus, index) => (
                         <div key={index} className="bg-white hover-lift rounded-lg shadow-md p-6 flex flex-col items-center">
-                            <img src={alumnus.image} alt={`Foto Alumni`} className="w-24 h-24 rounded-full mb-4 object-cover border-2" />
+                            <Image src={`/images/${alumnus.image}`} alt={`Foto Alumni`} width={96} height={96} className="rounded-full mb-4 object-cover border-2" />
                             <h3 className="text-xl font-semibold text-gray-800">{alumnus.name}</h3>
                             <p className="text-gray-600 text-center">{alumnus.university}</p>
                             <p className="text-gray-500 text-sm mb-2">Lulusan {alumnus.graduationYear}</p>

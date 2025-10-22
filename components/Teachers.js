@@ -1,11 +1,11 @@
-export default function Teachers() {
+import Image from "next/image";
 
-    // Data Struktur Organisasi
+export default function Teachers() {
     const organizationalStructure = {
     kaprogli: {
         name: 'Dony Tatang Triatmo, S.Kom.',
         position: 'Kepala Program Keahlian RPL',
-        photo: '/images/teacher/Dony-Tatang-Triatmo.png',
+        photo: 'teacher/Dony-Tatang-Triatmo.png',
         education: 'S1 Teknik Informatika - STMIK Pradnya Paramita',
         expertise: ['Software Engineering', 'Database Systems'],
         experience: '13 tahun'
@@ -14,7 +14,7 @@ export default function Teachers() {
             {
                 name: 'Mimin Putri Raharyani, S.Kom.',
                 position: 'Guru Pemrograman Web',
-                photo: '/images/teacher/Mimin-Putri-Raharyani.png',
+                photo: 'teacher/Mimin-Putri-Raharyani.png',
                 subjects: ['Pemrograman Web', 'JavaScript'],
                 years: '6 tahun'
             },
@@ -37,7 +37,7 @@ export default function Teachers() {
             <div className="flex flex-col items-center mb-16">
                 <div className="w-48 h-48 bg-gradient-to-br from-primary-100 to-primary-200 rounded-full mb-6 flex items-center justify-center overflow-hidden border-4 border-white shadow-lg">
                     <span className="text-primary-600 text-sm text-center font-medium">
-                        <img src={organizationalStructure.kaprogli.photo}></img>
+                        <Image src={`/images/${organizationalStructure.kaprogli.photo}`} width={200} height={200} alt="Foto Dony Tatang Triatmo"/>
                     </span>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-2 text-center">
@@ -77,7 +77,7 @@ export default function Teachers() {
                     <div className="flex items-start gap-6">
                         <div className="w-20 h-20 bg-gradient-to-br from-primary-100 to-primary-200 rounded-full flex items-center justify-center overflow-hidden flex-shrink-0 shadow-md">
                             <span className="text-primary-600 text-xs text-center font-medium">
-                                <img src={guru.photo}></img>
+                                <Image src={`/images/${guru.photo}`} width={200} height={200} alt="Foto Mimin Putri Raharyani" />
                             </span>
                         </div>
                         

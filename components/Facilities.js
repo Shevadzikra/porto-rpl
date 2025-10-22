@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Facilities() {
     const facilities = {
       ruangTI: {
@@ -5,14 +7,14 @@ export default function Facilities() {
         processor: 'Intel(R) Pentium(R) ~3.2GHz',
         memory: '2 GB',
         displayCard: 'Intel(R) HD Graphics',
-        image: '/images/facilities-photos/foto-ruang-ti.jpg'
+        image: 'facilities-photos/foto-ruang-ti.jpg'
       },
       ruangPPLG: {
           name: 'Ruang PPLG',
           processor: 'Intel(R) Core(TM) i7-10700 ~2.9GHz',
           memory: '16 GB',
           displayCard: 'Intel(R) UHD Graphics 630',
-          image: '/images/facilities-photos/foto-ruang-pplg.jpg'
+          image: 'facilities-photos/foto-ruang-pplg.jpg'
       }
     }
 
@@ -26,9 +28,8 @@ export default function Facilities() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* RUANG TI */}
             <div className="bg-white rounded-xl shadow-md overflow-hidden transition-transform hover:-translate-y-1">
-              <div 
-                className="h-72 flex items-center justify-center bg-cover bg-center" 
-                style={{ backgroundImage: `url(${facilities.ruangTI.image})`}}>
+              <div className="h-72 flex items-center justify-center bg-cover bg-center">
+                <Image src={`/images/${facilities.ruangTI.image}`} width={600} height={288} alt="Foto Ruang TI"/>
               </div>
 
               <div className="p-6 space-y-3">
@@ -51,9 +52,8 @@ export default function Facilities() {
 
             {/* RUANG PPLG */}
             <div className="bg-white rounded-xl shadow-md overflow-hidden transition-transform hover:-translate-y-1">
-              <div 
-                className="h-72 flex items-center justify-center bg-cover bg-center" 
-                style={{ backgroundImage: `url(${facilities.ruangPPLG.image})`}}>
+              <div className="h-72 flex items-center justify-center bg-cover bg-center">
+                <Image src={`/images/${facilities.ruangPPLG.image}`} width={600} height={288} alt="Foto Ruang PPLG"/>
               </div>
 
               <div className="p-6 space-y-3">

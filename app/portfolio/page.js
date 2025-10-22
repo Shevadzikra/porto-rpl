@@ -1,5 +1,6 @@
 import Header from '../../components/Navbar';
 import Footer from '../../components/Footer';
+import Image from 'next/image';
 
 export default function Portfolio() {
 
@@ -10,7 +11,7 @@ export default function Portfolio() {
       category2: 'Competition',
       description: 'Aplikasi web untuk memperkenalkan wisata Observasi Laboratorium Kakao Jember',
       technologies: ['Laravel', 'Bootstrap'],
-      image: '/images/porto-cover/cocoa-research-lab-website-photo.png',
+      image: 'porto-cover/cocoa-research-lab-website-photo.png',
       year: '2024'
     },
     {
@@ -19,7 +20,7 @@ export default function Portfolio() {
       category2: 'Competition',
       description: 'Aplikasi web untuk memperkenalkan wisata Pantai Tanjung Papuma Jember',
       technologies: ['PHP Native', 'Tailwind', 'JavaScript', 'GSAP'],
-      image: '/images/porto-cover/papuma-website-photo.png',
+      image: 'porto-cover/papuma-website-photo.png',
       year: '2024'
     },
     {
@@ -28,7 +29,7 @@ export default function Portfolio() {
       category2: null,
       description: 'Sebuah aplikasi web untuk klien penyedia jasa travel',
       technologies: ['HTML', 'Tailwind', 'JavaScript'],
-      image: '/images/porto-cover/kharisma-trans-jember-website-photo.png',
+      image: 'porto-cover/kharisma-trans-jember-website-photo.png',
       year: '2024'
     },
     {
@@ -37,7 +38,7 @@ export default function Portfolio() {
       category2: null,
       description: 'Membuat aplikasi berbasis website berupa kasir',
       technologies: ['PHP', 'JavaScript', 'Bootstrap'],
-      image: '/images/porto-cover/cashier-app-photo.png',
+      image: 'porto-cover/cashier-app-photo.png',
       year: '2024'
     },
     {
@@ -46,7 +47,7 @@ export default function Portfolio() {
       category2: null,
       description: 'Pembelian tiket sepakbola berbasis website',
       technologies: ['PHP', 'Bootstrap', 'JavaScript'],
-      image: '/images/porto-cover/ticketing-efootball-photo.png',
+      image: 'porto-cover/ticketing-efootball-photo.png',
       year: '2024'
     },
     {
@@ -55,7 +56,7 @@ export default function Portfolio() {
       category2: null,
       description: 'Aplikasi peminjaman buku perpustakaan berbasis website',
       technologies: ['PHP', 'JavaScript', 'Tailwind'],
-      image: '/images/porto-cover/perpus-skaga-website-photo.png',
+      image: 'porto-cover/perpus-skaga-website-photo.png',
       year: '2024'
     },
   ];
@@ -84,9 +85,8 @@ export default function Portfolio() {
               <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover-lift group"
               style={{ animationDelay: `${index * 300}ms` }}>
                 <div className="h-48 bg-gray-200 flex items-center justify-center relative overflow-hidden">
-                  <div 
-                    className="absolute inset-0 bg-fil bg-center bg-cover bg-opacity-0 group-hover:bg-opacity-80 transition-all duration-300 flex items-center justify-center"
-                    style={{ backgroundImage: `url(${project.image})`}}>
+                  <div className="absolute inset-0 bg-fil bg-center bg-cover bg-opacity-0 group-hover:bg-opacity-80 transition-all duration-300 flex items-center justify-center">
+                    <Image src={`/images/${project.image}`} alt={project.title} width={400} height={192}/>
                   </div>
                 </div>
                 
