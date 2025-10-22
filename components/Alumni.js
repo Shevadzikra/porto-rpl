@@ -6,21 +6,21 @@ export default function Alumni() {
             name: 'M Dien Vito Alivio Hidayat',
             image: 'alumni-photos/m-dien-vito-alivio-hidayat-photo.jpg',
             university: 'Politeknik Negeri Jember - D4 Teknik Informatika',
-            graduationYear: '2023',
+            graduationYear: '2019/2022',
             testimonial: "Selama di jurusan RPL, aku nggak cuma belajar ngoding, tapi juga diajarin cara berpikir logis dan kreatif untuk menyelesaikan masalah. Di era teknologi sekarang apalagi dengan berkembangnya AI kemampuan dari RPL jadi makin relevan. Kita bisa ikut berperan dalam bikin aplikasi pintar, sistem otomatisasi, sampai integrasi AI ke produk digital. Prospek kerjanya luas banget, dari developer, data analyst, UI/UX, sampai AI engineer pun bisa ditempuh kalau kita terus belajar. Buat adik-adik yang suka teknologi dan tantangan, RPL ini benar-benar jadi bekal masa depan."
         },
         {
-            name: 'lorem Ipsum',
-            image: null,
-            university: 'PT Telkom Indonesia - Software Engineer',
-            graduationYear: '2021/2022',
-            testimonial: "lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            name: 'Khairunnisa',
+            image: 'alumni-photos/khairunnisa-photo.png',
+            university: 'Universitas Jember',
+            graduationYear: '2022/2025',
+            testimonial: "Lulus dari SMK sangat membantu saya dalam perkuliahan. Relasi yang semakin luas dan kemampuan yang semakin meningkat serta lingkungan yang selalu support dalam perlombaan adalah hal terbaik setelah lulus sebagai siswa Rekayasa Perangkat Lunak"
         },
         {
-            name: 'Mas Aril',
+            name: 'Moch Djauharil Ilmi',
             image: 'alumni-photos/aril-photo.jpg',
             university: 'Politeknik Elektronika Negeri Surabaya (PENS)',
-            graduationYear: '2024',
+            graduationYear: '2022/2025',
             testimonial: "RPL adalah tempat saya bertumbuh. Selain menguasai skill coding, saya juga belajar banyak tentang komunikasi, kegigihan, dan berpikir kritis. Ilmu ini terbukti membawa saya menjuarai beberapa kompetisi tingkat regional bahkan nasional. Bagi saya, RPL adalah persiapan karir terbaik, yang sukses mengantarkan saya lolos ke perguruan tinggi negeri impian."
         }
     ];
