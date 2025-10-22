@@ -41,10 +41,10 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Media Sosial</h4>
             <div className="flex space-x-4">
-              <a href="https://www.instagram.com/rplskaga3?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="text-gray-300 hover:text-white">
+              <a href="https://www.instagram.com/rplskaga3?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="underline text-gray-300 hover:text-white">
                 Instagram Jurusan
               </a>
-              <a href="https://www.instagram.com/smknegeri3jember?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="text-gray-300 hover:text-white">
+              <a href="https://www.instagram.com/smknegeri3jember?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="underline text-gray-300 hover:text-white">
                 Instagram Sekolah
               </a>
             </div>
@@ -55,9 +55,9 @@ export default function Footer() {
           {/* <p>&copy; {new Date().getFullYear()} Jurusan RPL SMK. All rights reserved.</p> */}
           <p>Made with ❤︎ by  
             <span className="font-semibold text-white">
-              <a className='underline ml-1.5 mr-1.5'
+              <a className='ml-1.5 mr-1.5'
               href='https://www.instagram.com/shevdza_/?utm_source=qr&r=nametag '>
-                Shevadzikra
+                shevdza_
               </a>
             </span>
             on IG
