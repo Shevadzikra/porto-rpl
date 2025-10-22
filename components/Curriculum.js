@@ -5,7 +5,7 @@ export default function Curriculum() {
             title: "Kelas 10 - Foundation Year",
             siswa: [
                 { 
-                    photo: "/images/stockImageStudent.png",
+                    photo: "/images/foto-jurusan/10th-grade-photo.png",
                 },
             ],
             materiRPL: [
@@ -60,7 +60,7 @@ export default function Curriculum() {
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden mb-12 hover-lift">
             <div className="grid grid-cols-1 lg:grid-cols-3">
               {/* Foto Siswa */}
-              <div className="bg-gray-700 lg:col-span-1 bg-gradient-to-br from-primary-500 to-primary-600 pt-8 pr-8 pl-8 flex flex-col justify-center">
+              <div className="lg:col-span-1 bg-gradient-to-br bg-indigo-400 pt-8 pr-8 pl-8 flex flex-col justify-center">
                 <h3 className="text-2xl font-bold text-white mb-6 text-center">{curriculumData.kelas10.title}</h3>
                 <div className="space-y-6 ">
                   <img src={curriculumData.kelas10.siswa[0].photo} alt="Foto Siswa" className="w-full h-auto border-none object-cover" />
