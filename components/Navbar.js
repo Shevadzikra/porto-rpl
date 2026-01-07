@@ -12,6 +12,7 @@ const navItems = [
   { name: 'Guru & Staf', href: '/about#teachers' },
   { name: 'Karya Siswa', href: '/portfolio' },
   { name: 'Karir', href: '/about#karir' },
+  { name: 'Kegiatan', href: '/kegiatan' },
 ];
 
   return (

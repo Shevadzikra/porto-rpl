@@ -21,6 +21,7 @@ export default function Footer() {
               <li><Link href="/#curriculum" className="text-gray-300 hover:text-white">Kurikulum</Link></li>
               <li><Link href="/portfolio" className="text-gray-300 hover:text-white">Karya Siswa</Link></li>
               <li><Link href="/about#karir" className="text-gray-300 hover:text-white">Prospek Karir</Link></li>
+              <li><Link href="/kegiatan" className="text-gray-300 hover:text-white">Kegiatan</Link></li>
             </ul>
           </div>
 
